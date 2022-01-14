@@ -13,6 +13,7 @@ tests/_mypy
 venv
 src/deep_learning/data
 src/deep_learning/plots
+**iframe_figures
 
 # Files
 *.code-workspace
