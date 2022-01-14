@@ -11,6 +11,8 @@ dist
 tests/_pytest
 tests/_mypy
 venv
+src/deep_learning/data
+src/deep_learning/plots
 
 # Files
 *.code-workspace
