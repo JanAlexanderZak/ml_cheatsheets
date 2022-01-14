@@ -1,0 +1,55 @@
+{
+    // Python
+    "python.envFile": "${workspaceFolder}/.env",
+    //"python.envFile": "${workspaceFolder}/venv",
+    "python.defaultInterpreterPath": "${workspaceFolder}/venv/Scripts/python.exe",
+    
+    "python.terminal.activateEnvironment": true,
+    "python.terminal.activateEnvInCurrentTerminal": true,
+
+    // Linting (pylint + mypy)
+    "python.linting.enabled": true,
+    "python.linting.lintOnSave": true,
+    "python.linting.ignorePatterns": [
+        ".vscode/*.py", 
+        "**/site-packages/**/*.py", 
+        "venv/*.py", 
+        "**/.mypy_cache//**/*.py,",
+        "**/.pytest_cache//**/*.py",
+    ],
+
+    "python.linting.flake8Enabled": false,
+    "python.linting.pylintEnabled": true,
+    "python.linting.mypyEnabled": true,
+
+    //assert with: where mypy flake8 pylint
+    "python.linting.flake8Path": "${workspaceFolder}/venv/Scripts/flake8.exe",
+    "python.linting.pylintPath": "${workspaceFolder}/venv/Scripts/pylint.exe",
+    "python.linting.mypyPath": "${workspaceFolder}/venv/Scripts/mypy.exe",
+    "python.linting.pylintArgs": [
+        "--rcfile=${workspaceFolder}/tests/.pylintrc",
+    ],
+
+    "python.linting.mypyArgs": [
+        "--config-file=${workspaceFolder}/tests/mypy.ini",
+    ],
+
+    // Tests
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "python.testing.pytestPath": "${workspaceFolder}/venv/Scripts/pytest.exe",
+    "python.testing.pytestArgs": [
+        "tests",
+    ],
+    "python.testing.autoTestDiscoverOnSaveEnabled": true,
+
+    // Markdown
+    "[markdown]": {
+        /*
+        "editor.formatOnSave": true,
+        "editor.wordWrap": "on",
+        "editor.renderWhitespace": "all",
+        "editor.acceptSuggestionOnEnter": "off"
+        */
+    },
+}

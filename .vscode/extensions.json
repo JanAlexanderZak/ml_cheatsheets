@@ -1,0 +1,17 @@
+{
+    "recommendations": [
+        "eamodio.gitlens", 
+        "ms-toolsai.jupyter",
+        "ms-python.vscode-pylance",
+        "ms-python.python",
+        "2gua.rainbow-brackets",
+        "mechatroner.rainbow-csv",
+        "naumovs.color-highlight",
+        "njpwerner.autodocstring",
+        "kiteco.kite",
+        "aaron-bond.better-comments",
+        "yzhang.markdown-all-in-one",
+        "almenon.arepl", 
+        "ms-azuretools.vscode-docker",
+    ],
+  }
